@@ -3,8 +3,6 @@
  * @author chenyiqin
  */
 
-'use strict'
-
-var test = 2
+const test = 2
 
 console.log(test)
