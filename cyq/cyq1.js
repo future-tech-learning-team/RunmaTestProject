@@ -9,5 +9,6 @@ var testObj = {
     b: 2,
     c: 3,
     shiyunjie:29,
-    ttes:21
+    ttes:21,
+    abcdefg: 30
 };
