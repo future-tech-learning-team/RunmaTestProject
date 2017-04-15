@@ -3,6 +3,7 @@
  * @author chenyiqin
  */
 
+const test = 2
 
 var testObj = {
     a: 1,
@@ -17,3 +18,7 @@ var testObj = {
     abcdefg: 30
 
 };
+
+console.log(test)
+console.log(testObj)
+
