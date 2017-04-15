@@ -3,12 +3,8 @@
  * @author chenyiqin
  */
 
+'use strict'
 
-var testObj = {
-    a: 1,
-    b: 2,
-    c: 3,
-    shiyunjie:29,
-    ttes:21,
-    abcdefg: 30
-};
+var test = 2
+
+console.log(test)
