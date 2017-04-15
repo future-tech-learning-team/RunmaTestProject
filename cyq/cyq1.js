@@ -10,5 +10,7 @@ var testObj = {
     c: 3,
     shiyunjie:29,
     ttes:21,
-    abcdefg: 30
+    abcdefg: 30,
+    cyq: 1,
+    xvhua:188,
 };
