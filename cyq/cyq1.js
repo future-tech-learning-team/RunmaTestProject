@@ -8,5 +8,6 @@ var testObj = {
     a: 1,
     b: 2,
     c: 3,
-    shiyunjie:29
+    shiyunjie:29,
+    abcdefg: 30
 };
