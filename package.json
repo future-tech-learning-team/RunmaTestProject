@@ -1,0 +1,30 @@
+{
+    "name": "runma-test-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "eslint": "eslint . --quiet"
+    },
+    "pre-commit": [
+        "eslint"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/runma-learning-team/RunmaTestProject.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/runma-learning-team/RunmaTestProject/issues"
+    },
+    "homepage": "https://github.com/runma-learning-team/RunmaTestProject#readme",
+    "devDependencies": {
+        "babel-eslint": "^7.2.1",
+        "eslint": "^3.19.0",
+        "eslint-config-airbnb-base": "^11.1.2",
+        "eslint-plugin-import": "^2.2.0",
+        "eslint-plugin-react": "^6.10.3",
+        "pre-commit": "^1.2.2"
+    }
+}

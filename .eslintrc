@@ -1,0 +1,46 @@
+{
+    "extends": ["airbnb-base/legacy", "eslint:all"],
+    "plugins": [
+        "import"
+    ],
+    "rules": {
+        "indent": ["error", 4, {
+            "SwitchCase": 1
+        }],
+        "no-var": "off",
+        "semi": ["error", "never"],
+        "comma-dangle": ["error", "always"],
+        "comma-spacing": "off",
+        "object-curly-spacing": "off",
+        "class-methods-use-this": "off",
+        "global-require": "off",
+        "object-curly-newline": "off",
+        "arrow-body-style": "off",
+        "no-ternary": "off",
+        "no-trailing-spaces": "off",
+        "newline-before-return": "off",
+        "newline-after-var": "off",
+        "sort-keys": "off",
+        "sort-imports": "off",
+        "sort-vars": "off",
+        "arrow-parens": "off",
+        "no-inline-comments": "off",
+        "no-process-env": "off",
+        "require-await": "off",
+        "no-negated-condition": "off",
+        "no-underscore-dangle": "off",
+        "line-comment-position": "off",
+        "no-extra-parens": "off",
+        "max-len": "off",
+        "id-length": "off",
+        "no-invalid-this": "off",
+        "no-magic-numbers": "off",
+        "no-console": "off",
+        "no-mixed-operators": "off",
+        "quotes": "off"
+    },
+    "globals": {
+        "Promise": true,
+        "require": true
+    }
+}
