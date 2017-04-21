@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动偏移</title>
+    <style type="text/css">
+        body {
+            margin: 10px 40px;
+            padding: 0px;
+            width: 662px;
+            font-family: verdana, arial, sans-serif;
+            font-size: 16px;
+        }
+
+        h1 {
+            margin-left: 0;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    </style>
+    <style type="text/css">
+        /*clear语法：
+        clear : none | left | right | both
+        取值：
+        none : 默认值。
+        left : 左侧抗浮动
+        right : 右侧抗浮动
+        both : 两侧抗浮动*/
+        div {
+            position: relative;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+        p{ margin:0; padding:5px; background-color:gold; text-align:center;
+            border-left:1px solid gray; border-right:2px solid black;
+            border-top:1px solid gray; border-bottom:2px solid black; }
+        .float-left{float:left}
+        .float-right{float:right}
+        .clear-left{clear:left}
+        .clear-right{clear:right}
+        .sized   { width:70px; height:60px; margin:10px; }
+        .widened { width:175px; }
+        .shrunk  { margin:3px; padding:1px; background-color:white; }
+
+        .right-ex{margin-right: 100px;}
+        .right-re{margin-right: -55px;}
+        .left-re{margin-left: -179px;}
+        .top-ex{margin-top: 20px;}
+    </style>
+</head>
+<body>
+<h1>Offset Float</h1>
+<div>
+    <p class="float-left clear-left sized">Sized Float</p>
+
+    <p class="float-left right-re widened">Left-retracted Float</p>
+    <p class="float-left  shrunk">Float</p>
+
+
+
+    <p class="float-right clear-right sized">Sized Float</p>
+    <p class="float-right left-re widened">Right-retracted Float</p>
+    <p class="float-right  shrunk">Float</p>
+
+    <p class="float-right widened right-ex top-ex">Right-extended & Top-extended Float</p>
+
+    <p class="float-left clear-left shrunk">Float</p>
+    <p class="float-right clear-right shrunk">Float</p>
+
+</div>
+
+</body>
+</html>
