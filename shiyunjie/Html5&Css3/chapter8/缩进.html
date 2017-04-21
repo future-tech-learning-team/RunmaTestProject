@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>缩进</title>
+    <style type="text/css">
+        body {
+            margin: 10px 40px;
+            padding: 0px;
+            width: 662px;
+            font-family: verdana, arial, sans-serif;
+            font-size: 16px;
+        }
+
+        h1 {
+            margin-left: 0;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    </style>
+
+    <style type="text/css">
+        /**
+        1、static（静态定位）：默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
+        2、relative（相对定位）：生成相对定位的元素，通过top,bottom,left,right的设置相对于其正常（原先本身）位置进行定位。可通过z-index进行层次分级。　　
+        3、absolute（绝对定位）：生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。可通过z-index进行层次分级。
+        4、fixed（固定定位）：生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。可通过z-index进行层次分级。
+         */
+        .gp {
+            height: 170px;
+            position: relative;
+            /*z-index: 10;*/
+            border: 2px solid black
+        }
+
+        .parent {
+            position: relative;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 0px 10px;
+        }
+
+        .hss {
+            width: auto;
+            height: auto;
+            position: static;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+
+        .hsa {
+            width: auto;
+            height: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: auto;
+            bottom: auto;
+            margin-left: -30px;
+            margin-right: -30px;
+            margin-top: 20px;
+            margin-bottom: auto;
+        }
+
+        .vsa {
+            width: 120px;
+            height: auto;
+            position: absolute;
+            right: 0;
+            left: auto;
+            top: 0;
+            bottom: 0;
+            margin-bottom: -30px;
+            margin-top: -30px;
+            margin-right: 70px;
+            margin-left: auto;
+        }
+
+        .s {
+            padding: 5px;
+            background-color: gold;
+            text-align: center;
+            border-left: 1px solid gray;
+            border-right: 2px solid black;
+            border-top: 1px solid gray;
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<h1>Indented</h1>
+<div class="gp">Positioned Grandparent
+    <div class="parent">Non-positioned Parent
+        <div class="hss s">
+            Horizontally Stretched static
+        </div>
+    </div>
+    <div class="vsa s">
+        Vertically Stretched Absolute
+    </div>
+    <div class="hsa s">
+        Horizontally Stretched Absolute
+    </div>
+</div>
+
+</body>
+</html>
