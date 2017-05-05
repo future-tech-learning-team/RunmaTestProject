@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.item-name{
+  padding-left: 15px;
+}
+.searchBox{
+  margin: 10px 50px;
+  width: 300px;
+}
+.hot{
+  color: red;
+}
+.hidden{
+  display: none;
+}
+.item-row{
+  border-bottom: 1px solid gainsboro;
+}
+
+.show{
+  display: block;
+}
